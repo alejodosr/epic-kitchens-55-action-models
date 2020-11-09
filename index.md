@@ -33,7 +33,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
   
   | Verbs | Nouns | Actions |
 | --- | --- | --- |
-| ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
+| ![](images/verbs_histogram.png)  |  ![](images/nouns_histogram.png) | ![](images/actions_histogram.png) |
   
   ### Loss
   
