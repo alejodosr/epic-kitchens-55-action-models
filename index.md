@@ -3,7 +3,25 @@
 
 - Get familiar with the epic kitchen project: [https://epic-kitchens.github.io/2020-100](https://epic-kitchens.github.io/2020-100)
 - Collect a couple of KFC kitchen videos from youtube as a dataset to perform the task.
-  - The selected videos have been [one](https://www.youtube.com/watch?v=wiAYDb73Dbo&t), [two](https://www.youtube.com/watch?v=c-uBjf988yE&t) and [three](https://www.youtube.com/watch?v=mTv4RYEkGkQ&t)
+  - The selected videos have been [one](https://www.youtube.com/watch?v=wiAYDb73Dbo&t), [two](https://www.youtube.com/watch?v=c-uBjf988yE&t) and [three](https://www.youtube.com/watch?v=mTv4RYEkGkQ&t). They do not provide ego-motion as in the epic kitchens dataset.
 - Go through the GitHub link: https://github.com/epic-kitchens/epic-kitchens-55-action-models and make use of two pre-trained models of your choice for running inference on your videos.
   - The selected models have been Temporal Segments Network (TSN) and Temporal Relation Network (TRN).
 - Run the models and report the approach used and model performance (most important step). In this step, we would like to see how you’d compare the models in terms of accuracy, losses, and FPS.
+  - The results have been reported in the remainder of the page.
+  
+  ### Environment and Approach
+  ```
+  conda version : 4.9.1
+  python version : 3.8.5.final.0
+  platform : linux-64
+  OS: Ubuntu 18.04 Bionic Beaver
+  GPU: GeForce GTX 950M (VRAM: 2GB)
+  ```
+  - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS.
+  - 30 random segments have been selected. These segments have been annotated in order to provide requested metrics (_e.g._ accuracy). 
+  - The models have been executed in their RGB version.
+  - The selected backbone has been _Resnet 50_.
+  - Models are evaluated using 10 crops (center and corner crops as well as their horizontal flips) for each clip. The scores from these are averaged pre-softmax to produce a single clip-level score (as reported in [epic kitchen evaluation paper](https://arxiv.org/pdf/1908.00867.pdf)).
+  - Each segment is divided into 8 snippets of 1 frame each.
+  - Batch size has been set to 1 in order to account for latency metrics.
+  - Frames are loaded directly from video, using `ffmpeg` to extract snippet's frames.
