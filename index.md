@@ -11,7 +11,7 @@
 _Feel free to use any sort of visualisation library to better communicate your results. Plot to impress! :)
 (optional) explain how you would optimise the model to run on an edge system._
   
-  ### Environment and Approach
+  ### Environment and approach
   ```
   conda version : 4.9.1
   python version : 3.8.5.final.0
@@ -29,7 +29,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
   - Frames were loaded directly from video, using `ffmpeg` to extract snippet's frames.
   - The script used to generate results was `test_models.py` and to generate metrics was `generate_metrics.py`.
   
-  ### Dataset
+  ### Collected dataset
   
   | Verbs | Nouns | Actions |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
 | --- | --- |
 | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
 
-### Confusion Matrices
+### Confusion matrices
 
 | TSN | TRN |
 | --- | --- |
@@ -51,7 +51,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
 | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
 | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
 
-### Accuracy, Precision and Recall
+### Accuracy, precision and recall
 
 | Model | Top-1 Accuracy (Verbs) | Avg. Class Precision (Verbs) | Avg. Class Recall (Verbs) |
 | --- | --- | --- | --- |
