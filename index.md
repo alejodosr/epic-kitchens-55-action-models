@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## Task A: Action Recognition
+### Alejandro Rodriguez Ramos
 
-You can use the [editor on GitHub](https://github.com/alejodosr/epic-kitchens-55-action-models/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alejodosr/epic-kitchens-55-action-models/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Get familiar with the epic kitchen project: [https://epic-kitchens.github.io/2020-100](https://epic-kitchens.github.io/2020-100)
+- Collect a couple of KFC kitchen videos from youtube as a dataset to perform the task.
+  - The selected videos have been [one](https://www.youtube.com/watch?v=wiAYDb73Dbo&t), [two](https://www.youtube.com/watch?v=c-uBjf988yE&t) and [three](https://www.youtube.com/watch?v=mTv4RYEkGkQ&t)
+- Go through the GitHub link: https://github.com/epic-kitchens/epic-kitchens-55-action-models and make use of two pre-trained models of your choice for running inference on your videos.
+  - The selected models have been Temporal Segments Network (TSN) and Temporal Relation Network (TRN).
+- Run the models and report the approach used and model performance (most important step). In this step, we would like to see how you’d compare the models in terms of accuracy, losses, and FPS.
