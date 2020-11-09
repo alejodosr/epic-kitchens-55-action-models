@@ -8,10 +8,11 @@
 - _Run the models and report the approach used and model performance (most important step). In this step, we would like to see how you’d compare the models in terms of accuracy, losses, and FPS._
   - The results have been reported in the remainder of the page.
 
-_Feel free to use any sort of visualisation library to better communicate your results. Plot to impress! :)
-(optional) explain how you would optimise the model to run on an edge system._
+_Feel free to use any sort of visualisation library to better communicate your results. Plot to impress! :)_
+_(optional) explain how you would optimise the model to run on an edge system._
   
 ### Environment and approach
+
   ```
   conda version : 4.9.1
   python version : 3.8.5.final.0
