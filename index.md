@@ -110,7 +110,7 @@ The performance of both models has been notably poor. As a preliminary explanati
 
 Edge systems are normally computationally constrained. These are some ideas to improve the perfonmance of the model in terms of latency (without losing accuracy):
 - Data loading (batch generation) and inference processing have to be decoupled (parallelized).
-- Take advantage of the specific architecture  (_e.g._ tensor cores, etc.).
+- Take advantage of the specific GPU architecture  (_e.g._ tensor cores, etc.).
 - Increase the batch size when possible.
 - The model can be serialized and migrated to C++ (PyTorch C++ API).
 - The model can be exported to ONNX in order to be  migrated to TensorRT.
