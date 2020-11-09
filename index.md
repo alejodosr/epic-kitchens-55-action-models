@@ -1,5 +1,4 @@
-## Task A: Action Recognition
-### Alejandro Rodriguez Ramos
+## Task A: Action Recognition (Alejandro Rodriguez Ramos)
 
 - Get familiar with the epic kitchen project: [https://epic-kitchens.github.io/2020-100](https://epic-kitchens.github.io/2020-100)
 - Collect a couple of KFC kitchen videos from youtube as a dataset to perform the task.
@@ -46,10 +45,10 @@ Feel free to use any sort of visualisation library to better communicate your re
 
 ### Accuracy, Precision and Recall
 
-| Model | Top-1 Accuracy | Top-5 Accuracy | Avg. Class Precision | Avg. Class Recall |
-| --- | --- | --- | --- | --- |
-| TSN | + | + | + | + |
-| TRN | + | + | + | + |
+| Model | Top-1 Accuracy | Avg. Class Precision | Avg. Class Recall |
+| --- | --- | --- | --- |
+| TSN | + | + | + |
+| TRN | + | + | + |
 
 ### Latency and FPS
 
