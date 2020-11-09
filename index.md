@@ -95,7 +95,7 @@ Note: times have been measured with `time` library. For more precise time profil
 
 ### Preliminary explanation of performance results
 
-The performance of both models has been notably poor. As a preliminary explanation, it can be due to:
+The performance of both models has been *notably poor*. As a preliminary explanation, it can be due to:
 - The annotation of the dataset has been too specific, _i.e._ "insert chicken" instead of "put meat". More experience in the annotation of this type of datasets is required.
 - The models are trained in completely different domains. The video images of the original training/testing dataset had better quality and the video images were taken from the action-taking perspective (ego-motion). In the collected dataset, the video images lacked a bit of quality and were recorded from an external oberserver point of view.
 - The selected model architecture (_e.g_ design (TSN, TRN, TSM, MTRN, etc.), backbone size, input (RGB, Flow, etc.), number of snippets per segment, etc.).
