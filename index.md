@@ -8,6 +8,8 @@
   - The selected models have been Temporal Segments Network (TSN) and Temporal Relation Network (TRN).
 - Run the models and report the approach used and model performance (most important step). In this step, we would like to see how you’d compare the models in terms of accuracy, losses, and FPS.
   - The results have been reported in the remainder of the page.
+Feel free to use any sort of visualisation library to better communicate your results. Plot to impress! :)
+(optional) explain how you would optimise the model to run on an edge system.
   
   ### Environment and Approach
   ```
@@ -17,7 +19,7 @@
   OS: Ubuntu 18.04 Bionic Beaver
   GPU: GeForce GTX 950M (VRAM: 2GB)
   ```
-  - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS.
+  - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS (using this script)
   - 30 random segments have been selected. These segments have been annotated in order to provide requested metrics (_e.g._ accuracy). 
   - The models have been executed in their RGB version.
   - The selected backbone has been _Resnet 50_.
@@ -33,3 +35,25 @@
 | TSN | TRN |
 | --- | --- |
 | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
+
+### Confusion Matrices
+
+| TSN | TRN |
+| --- | --- |
+| ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
+| ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
+| ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
+
+### Accuracy, Precision and Recall
+
+| Model | Top-1 Accuracy | Top-5 Accuracy | Avg. Class Precision | Avg. Class Recall |
+| --- | --- | --- | --- | --- |
+| TSN | + | + | + | + |
+| TRN | + | + | + | + |
+
+### Latency and FPS
+
+| Model | Data Loading Latency (s) | Model Inference Latency (s) | FPS |
+| --- | --- | --- | --- |
+| TSN | + | + | + |
+| TRN | + | + | + |
