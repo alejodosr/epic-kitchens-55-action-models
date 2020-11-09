@@ -108,7 +108,7 @@ The performance of both models has been *notably poor*. As a preliminary explana
 
 ### Optimization ideas for running on an edge system [optional]
 
-Edge systems are normally computationally constrained. These are some ideas to improve the perfonmance of the model in terms of latency (without losing accuracy):
+Edge systems are normally computationally constrained. These are some ideas to improve the performance of the model in terms of latency (without losing accuracy):
 - Data loading (batch generation) and inference processing have to be decoupled (parallelized).
 - Take advantage of the specific GPU architecture  (_e.g._ tensor cores, etc.).
 - Increase the batch size when possible.
