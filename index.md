@@ -29,7 +29,7 @@ _(optional) explain how you would optimise the model to run on an edge system._
   - Each segment is divided into 8 snippets of 1 frame each.
   - Batch size has been set to 1.
   - Frames were loaded directly from video, using `ffmpeg` to extract snippet's frames.
-  - The script used to generate results was `test_models.py` and to generate metrics was `generate_metrics.py`.
+  - The script used to generate the results was `test_models.py` and to generate the metrics was `generate_metrics.py`.
   
 ### Collected dataset
   
