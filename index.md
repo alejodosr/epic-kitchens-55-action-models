@@ -7,6 +7,7 @@
   - The selected models have been Temporal Segments Network (TSN) and Temporal Relation Network (TRN).
 - Run the models and report the approach used and model performance (most important step). In this step, we would like to see how you’d compare the models in terms of accuracy, losses, and FPS.
   - The results have been reported in the remainder of the page.
+
 Feel free to use any sort of visualisation library to better communicate your results. Plot to impress! :)
 (optional) explain how you would optimise the model to run on an edge system.
   
@@ -26,6 +27,13 @@ Feel free to use any sort of visualisation library to better communicate your re
   - Each segment is divided into 8 snippets of 1 frame each.
   - Batch size has been set to 1 in order to account for latency metrics.
   - Frames are loaded directly from video, using `ffmpeg` to extract snippet's frames.
+  - The scripts used to generate results was `test_models.py` and to generate metrics was `generate_metrics.py`.
+  
+  ### Dataset
+  
+  | Verbs | Nouns | Actions |
+| --- | --- | --- |
+| ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg)  |  ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) | ![](https://www.masquenegocio.com/wp-content/uploads/2019/03/google-images-874x492.jpg) |
   
   ### Loss
   
@@ -45,14 +53,26 @@ Feel free to use any sort of visualisation library to better communicate your re
 
 ### Accuracy, Precision and Recall
 
-| Model | Top-1 Accuracy | Avg. Class Precision | Avg. Class Recall |
+| Model | Top-1 Accuracy (Verbs) | Avg. Class Precision (Verbs) | Avg. Class Recall (Verbs) |
 | --- | --- | --- | --- |
-| TSN | + | + | + |
-| TRN | + | + | + |
+| TSN (RGB) | 13% | 8.8% | 13.3% |
+| TRN (RGB) | 6% | 3.7% | 6.6% |
+
+
+| Model | Top-1 Accuracy (Nouns) | Avg. Class Precision (Nouns) | Avg. Class Recall (Nouns) |
+| --- | --- | --- | --- |
+| TSN (RGB) | 0.0% | 0.0% | 0.0% |
+| TRN (RGB) | 0.0% | 0.0% | 0.0% |
+
+
+| Model | Top-1 Accuracy (Actions) | Avg. Class Precision (Actions) | Avg. Class Recall (Actions) |
+| --- | --- | --- | --- |
+| TSN (RGB) | 0.0% | 0.0% | 0.0% |
+| TRN (RGB) | 0.0% | 0.0% | 0.0% |
 
 ### Latency and FPS
 
-| Model | Data Loading Latency (s) | Model Inference Latency (s) | FPS |
+| Model | Avg. Data Loading Latency (s) | Avg. Model Inference Latency (s) | Avg. FPS |
 | --- | --- | --- | --- |
-| TSN | + | + | + |
-| TRN | + | + | + |
+| TSN (RGB) | 0.548 | 1.879 | 3.29 |
+| TRN (RGB) | 1.19 | 1.88 | 2.60 |
