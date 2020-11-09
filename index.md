@@ -32,7 +32,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
   
 ### Collected dataset
   
-  Histogram of classes for verbs, nouns and actions in the collected dataset. For better visualization, please click on the images below.
+  Histogram of classes for verbs, nouns and actions in the collected dataset. For better visualization, please open images in a new tab.
   
   | Verbs | Nouns | Actions |
 | --- | --- | --- |
@@ -48,7 +48,7 @@ _Feel free to use any sort of visualisation library to better communicate your r
 
 ### Confusion matrices
 
- For better visualization, please click on the images below.
+ For better visualization, please open images in a new tab.
 
 | TSN (Verbs) | TRN (Verbs) |
 | --- | --- |
