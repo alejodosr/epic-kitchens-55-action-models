@@ -47,6 +47,8 @@ _Feel free to use any sort of visualisation library to better communicate your r
 
 ### Confusion matrices
 
+ For better visualization, please click on the images below.
+
 | TSN (Verbs) | TRN (Verbs) |
 | --- | --- |
 | ![](images/verbs_ncm_tsn.png)  |  ![](images/verbs_ncm_trn.png) |
@@ -104,6 +106,7 @@ The performance of both models has been notably poor. As a preliminary explanati
 
 Edge systems are normally computationally constrained. These are some ideas to improve the perfonmance of the model in terms of latency (without losing accuracy):
 - Data loading (batch generation) and inference processing have to be decoupled (parallelized).
+- Take advantage of the specific architecture  (_e.g._ tensor cores, etc.).
 - Increase the batch size when possible.
 - The model can be serialized and migrated to C++ (PyTorch C++ API).
 - The model can be exported to ONNX in order to be  migrated to TensorRT.
