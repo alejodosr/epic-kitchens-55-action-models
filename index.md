@@ -80,7 +80,33 @@ _Feel free to use any sort of visualisation library to better communicate your r
 
 ### Latency and FPS
 
+The data loading latency accounts for the time it takes to load a video segment from disk, separate it into images with `ffmpeg`, and apply transforms. The inference latency accounts for the time it takes to make a forward pass of the model. The FPS metric has been calculated as `no. of frames per segment / full_latency` and `full_latency` accounts for the sum of the stated latencies provided.
+
 | Model | Avg. Data Loading Latency (s) | Avg. Model Inference Latency (s) | Avg. FPS |
 | --- | --- | --- | --- |
 | TSN (RGB) | 0.548 | 1.879 | 3.29 |
 | TRN (RGB) | 1.19 | 1.88 | 2.60 |
+
+### Preliminary explanation of performance results
+
+The performance of both models has been notably poor. As a preliminary explanation, it can be due to:
+- The annotation of the dataset has been too specific, _i.e._ "insert chicken" instead of "put meat". More experience in the annotation of this type of datasets is required.
+- The models are trained in completely different domains. The video images of the original training/testing dataset had better quality and the video images were taken from the action-taking perspective (ego-motion). In the collected dataset, the video images lacked a bit of quality and were recorded from an external oberserver point of view.
+- The selected model architecture (_e.g_ design (TSN, TRN, TSM, MTRN, etc.), backbone size, input (RGB, Flow, etc.), number of snippets per segment, etc.).
+
+### Quick ideas to improve performance results
+- Fine tune the models in the collected dataset domain.
+- Forward pass of flow images too.
+- Test BNInception backbone.
+- Search for other optimum segment size and time between snippets.
+
+### Optimization ideas for running on an edge system [optional]
+
+Edge systems are normally computationally constrained. These are some ideas to improve the perfonmance of the model in terms of latency (without losing accuracy):
+- Data loading (batch generation) and inference processing have to be decoupled (parallelized).
+- Increase the batch size when possible.
+- The model can be serialized and migrated to C++ (PyTorch C++ API).
+- The model can be exported to ONNX in order to be  migrated to TensorRT.
+- The model [can be pruned](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html).
+- Training in half or [mixed precision](https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/).
+- The model can be [quantized](https://pytorch.org/docs/stable/quantization.html). 
