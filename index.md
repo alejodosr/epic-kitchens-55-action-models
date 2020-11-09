@@ -21,7 +21,7 @@ _(optional) explain how you would optimise the model to run on an edge system._
   OS: Ubuntu 18.04 Bionic Beaver
   GPU: GeForce GTX 950M (VRAM: 2GB)
   ```
-  - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS (using this script)
+  - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS (using this `ffmpeg`)
   - 30 random segments have been selected. These segments have been annotated in order to provide requested metrics (_e.g._ accuracy). 
   - The models have been executed in their RGB version.
   - The selected backbone has been _Resnet 50_.
