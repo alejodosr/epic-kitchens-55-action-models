@@ -91,7 +91,7 @@ The data loading latency accounts for the time it takes to load a video segment 
 | TSN (RGB) | 0.548 | 1.879 | 3.29 |
 | TRN (RGB) | 1.19 | 1.88 | 2.60 |
 
-Note: times have been measured with `time` library. For more precising time profiling, pytorch profiler can be used instead.
+Note: times have been measured with `time` library. For more precise time profiling, pytorch profiler can be used instead.
 
 ### Preliminary explanation of performance results
 
