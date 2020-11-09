@@ -26,8 +26,8 @@ _Feel free to use any sort of visualisation library to better communicate your r
   - Models are evaluated using 10 crops (center and corner crops as well as their horizontal flips) for each clip. The scores from these are averaged pre-softmax to produce a single clip-level score (as reported in [epic kitchen evaluation paper](https://arxiv.org/pdf/1908.00867.pdf)).
   - Each segment is divided into 8 snippets of 1 frame each.
   - Batch size has been set to 1 in order to account for latency metrics.
-  - Frames are loaded directly from video, using `ffmpeg` to extract snippet's frames.
-  - The scripts used to generate results was `test_models.py` and to generate metrics was `generate_metrics.py`.
+  - Frames were loaded directly from video, using `ffmpeg` to extract snippet's frames.
+  - The script used to generate results was `test_models.py` and to generate metrics was `generate_metrics.py`.
   
   ### Dataset
   
