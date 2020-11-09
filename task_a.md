@@ -22,7 +22,12 @@ _(optional) explain how you would optimise the model to run on an edge system._
   GPU: GeForce GTX 950M (VRAM: 2GB)
   ```
   - Every video has been splitted into segments of 8 seconds each and resampled to constant 30 FPS (using `ffmpeg`)
-  - 30 random segments have been selected. These segments have been annotated in order to provide requested metrics (_e.g._ accuracy). This is the [generated dataset](https://upm365-my.sharepoint.com/:u:/g/personal/alejandro_rramos_alumnos_upm_es/ETlNrUQ0XXBNvr_Kh_FmShABiQ1hwEwo9x1wSNyp1silRg?e=tbwDJG).
+  - 30 random segments have been selected. These segments have been annotated in order to provide requested metrics (_e.g._ accuracy). This is the [generated dataset](https://upm365-my.sharepoint.com/:u:/g/personal/alejandro_rramos_alumnos_upm_es/ETlNrUQ0XXBNvr_Kh_FmShABiQ1hwEwo9x1wSNyp1silRg?e=tbwDJG). The format of the annotations was included in a single `.csv` file as:
+  
+  ```
+  uid,video_id,narration,start_timestamp,stop_timestamp,start_frame,stop_frame,participant_id,verb,noun,verb_class,noun_class,all_nouns,all_noun_classes
+  ```
+  
   - The models have been executed in their RGB version.
   - The selected backbone has been _Resnet 50_.
   - Models are evaluated using 10 crops (center and corner crops as well as their horizontal flips) for each clip. The scores from these are averaged pre-softmax to produce a single clip-level score (as reported in [epic kitchen evaluation paper](https://arxiv.org/pdf/1908.00867.pdf)).
