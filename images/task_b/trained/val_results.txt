@@ -1,0 +1,17 @@
+Verb Top-1 Accuracy: 0.43478260869565216
+Noun Top-1 Accuracy: 0.4782608695652174
+Action Top-1 Accuracy: 0.30434782608695654
+Verb Avg. Class Precision: 0.4245524296675192
+/home/alejandro/anaconda2/envs/epic-models/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Noun Avg. Class Precision: 0.49860646599777037
+Action Avg. Class Precision: 0.18729096989966554
+Verb Avg. Class Recall: 0.43478260869565216
+Noun Avg. Class Recall: 0.4782608695652174
+/home/alejandro/anaconda2/envs/epic-models/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Action Avg. Class Recall: 0.30434782608695654
+Avg. Data Loading Latency: 0.018186043478260718
+Avg. Inference Latency: 1.8499004782608692
+Avg. FPS: 4.282456892067424
+
