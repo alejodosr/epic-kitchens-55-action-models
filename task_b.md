@@ -120,7 +120,7 @@ The presented losses have been used for evaluation of the training performance.
 
 ### Latency and FPS
 
-The data loading latency accounts for the time it takes to retrieve an iteam from the dataset class instance. The inference latency accounts for the time it takes to make a forward pass of the model. The FPS metric has been calculated as `no. of frames per segment / full_latency` and `full_latency` accounts for the sum of the stated latencies provided.
+The data loading latency accounts for the time it takes to retrieve an item from the dataset class instance. The inference latency accounts for the time it takes to make a forward pass of the model. The FPS metric has been calculated as `no. of frames per segment / full_latency` and `full_latency` accounts for the sum of the stated latencies provided.
 
 | Model | Avg. Data Loading Latency (s) | Avg. Model Inference Latency (s) | Avg. FPS |
 | --- | --- | --- | --- |
