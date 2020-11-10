@@ -9,8 +9,8 @@ import time
 import torch.hub
 
 parser = argparse.ArgumentParser(
-    description="Standard video-level testing")
-parser.add_argument('--vid_path', type=str, default="./videos/")
+    description="Action recognition testing")
+parser.add_argument('--vid_path', type=str, default="./videos/old/")
 parser.add_argument('--res_path', type=str, default="./results/")
 
 args = parser.parse_args()
@@ -129,6 +129,9 @@ for j, model in enumerate(models):
             verb_logits, noun_logits = model(inputs)
             verb_targets = (torch.ones(10, dtype=torch.long) * kfc_anno['verb_class'][i]).to(device)
             noun_targets = (torch.ones(10, dtype=torch.long) * kfc_anno['noun_class'][i]).to(device)
+            print(verb_logits.shape)
+            print(verb_targets.shape)
+            input()
             loss = (criterion(verb_logits, verb_targets) + criterion(noun_logits, noun_targets)).cpu().detach().numpy()
             d['loss'].append(loss)
 
