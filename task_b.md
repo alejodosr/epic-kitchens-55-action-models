@@ -12,6 +12,7 @@ _Use ffmpeg to split the videos you’ve collected into 8 second segments and la
   ```
   uid,verb,noun,action,verb_class,noun_class
   ```
+  The test dataset has been excluded from this study due to the reduced size of the full dataset.
 
 _Next, split the folders into test and train sets._
 
