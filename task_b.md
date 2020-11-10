@@ -47,7 +47,7 @@ _*Using GitHub commits for performing tasks above is a big plus._
   - The script used to train was `train_pl_model.py`, to generate the validation results was `test_pl_model.py` and to generate the metrics was `generate_metrics.py`.
   - The training evaluation was carried out with [tensorboard](https://www.tensorflow.org/tensorboard?hl=es-419) integration.
   
-  ### Collected dataset
+### Collected dataset
   
   Histogram of classes for verbs, nouns and actions in the collected dataset. For better visualization, please open images in a new tab.
   
