@@ -131,7 +131,7 @@ Note: times have been measured with `time` library. For more precise time profil
 
 ### Preliminary explanation of performance results
 
-The performance of baseline model has been poor while the performance of the fine tuned model has improved notably. Nevertheless, several optimization of hyperparameters, dataset size and quality, and model architecture can be carried out.
+The performance of baseline model has been poor while the performance of the fine tuned model has improved notably. Nevertheless, several optimizations of hyperparameters, dataset size and quality, and model architecture can be carried out.
 
 ### How would you improve accuracy and loss? [optional]
 
