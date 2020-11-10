@@ -126,3 +126,24 @@ The data loading latency accounts for the time it takes to retrieve an iteam fro
 | TSN - Transfer Learning (RGB) | 0.018 | 1.84 | 4.28 |
 
 Note: times have been measured with `time` library. For more precise time profiling, pytorch profiler can be used instead.
+
+
+### Preliminary explanation of performance results
+
+The performance of baseline model has been poor while the performance of the fine tuned model has improved notably. Nevertheless, several optimization of hyperparameters, dataset size and quality, and model architecture can be carried out.
+
+### How would you improve accuracy and loss? [optional]
+
+- Increase the dataset size, quality of the images and assure a representative dataset domain. Assure the actions in the dataset are well delimited (videos smartly splitted).
+- Forward pass of Flow images, RGB diff, etc.
+- Test BNInception backbone.
+- Try freezing backbone and fine tuning last layers.
+- Search for other optimum segment size and time between snippets.
+- Grid search on learning rate, learning rate scheduler, etc.
+- Test other architectures.
+
+### How would you incorporate speech data? [optional]
+
+- A recurrent architecture, such as an LSTM, can be used as a feature extractor for speech data. The features can be inputed in the last fully connected layers.
+- A [spectogram](https://en.wikipedia.org/wiki/Spectrogram) can be generated from speech data in order to include it as another channel to the CNN layers input.
+- [Temporal Convolutional Networks (TCNs)](https://medium.com/@raushan2807/temporal-convolutional-networks-bfea16e6d7d2) can be integrated into the presented architectures in order to account for the temporal structure of speech data (in combination of other techniques).
