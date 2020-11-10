@@ -136,6 +136,7 @@ The performance of baseline model has been poor while the performance of the fin
 ### How would you improve accuracy and loss? [optional]
 
 - Increase the dataset size, quality of the images and assure a representative dataset domain. Assure the actions in the dataset are well delimited (videos smartly splitted).
+- Include test dataset for a formal evaluation of the perfomance in a non-optimized set.
 - Forward pass of Flow images, RGB diff, etc.
 - Test BNInception backbone.
 - Try freezing backbone and fine tuning last layers.
