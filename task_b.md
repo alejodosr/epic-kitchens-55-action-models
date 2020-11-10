@@ -43,7 +43,7 @@ _*Using GitHub commits for performing tasks above is a big plus._
   - For training 1 crop is used.
   - Models are validated using 10 crops (center and corner crops as well as their horizontal flips) for each clip. The scores from these are averaged pre-softmax to produce a single clip-level score (as reported in [epic kitchen evaluation paper](https://arxiv.org/pdf/1908.00867.pdf)).
   - Batch size has been set to 1 for training and validation.
-  - Frames from train/vale datasets were preloaded in RAM directly from video, using `ffmpeg` to extract snippet's frames. This is possible due to the reduced size of the datasets.
+  - Frames from train/val datasets were preloaded in RAM directly from video, using `ffmpeg` to extract snippet's frames. This is possible due to the reduced size of the datasets.
   - The script used to train was `train_pl_model.py`, to generate the validation results was `test_pl_model.py` and to generate the metrics was `generate_metrics.py`.
   - The training evaluation was carried out with [tensorboard](https://www.tensorflow.org/tensorboard?hl=es-419) integration.
   
