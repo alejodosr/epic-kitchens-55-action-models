@@ -137,6 +137,7 @@ The performance of baseline model has been poor while the performance of the fin
 
 - Increase the dataset size, quality of the images and assure a representative dataset domain. Assure the actions in the dataset are well delimited (videos smartly splitted).
 - Include the _test_ dataset for a formal evaluation of the perfomance in a non-optimized set.
+- Data agumentation techniques (Photometric Distortion , Geometric Distortion, Image Oclusion, etc.)
 - Perform a long training in order to check if _double descent_ is present.
 - Forward pass of Flow images, RGB diff, etc.
 - Test BNInception backbone.
