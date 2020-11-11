@@ -131,7 +131,7 @@ Note: times have been measured with `time` library. For more precise time profil
 
 ### Preliminary explanation of performance results
 
-The performance of baseline model has been poor while the performance of the fine tuned model has improved notably. The accuracy metric is within an acceptable range, regarding the scope of this task, and precision and recall metrics are balanced (they can be higher but denote precision and robutness against false positives). Nevertheless, several optimizations of hyperparameters, dataset size and quality, and model architecture can be carried out.
+The performance of baseline model has been poor while the performance of the fine tuned model has improved notably. The accuracy metric is within an acceptable range, regarding the scope of this task, and precision and recall metrics are balanced (they can be higher but denote precision and robutness against false positives). Nevertheless, several optimizations of hyperparameters, dataset size and quality, and model architecture can be carried out. In a further evaluation, other metrics can be generated, such as ROC curves for each class.
 
 ### How would you improve accuracy and loss? [optional]
 
