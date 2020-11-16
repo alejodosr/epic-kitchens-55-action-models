@@ -149,5 +149,5 @@ The performance of baseline model has been poor while the performance of the fin
 ### How would you incorporate speech data? [optional]
 
 - A recurrent architecture, such as an LSTM, can be used as a feature extractor for speech data. The features can be inputed in the last fully connected layers.
-- A [spectogram](https://en.wikipedia.org/wiki/Spectrogram) can be generated from speech data in order to include it as another channel to the CNN layers input.
+- A [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) can be generated from speech data in order to include it as another channel to the CNN layers input.
 - [Temporal Convolutional Networks (TCNs)](https://medium.com/@raushan2807/temporal-convolutional-networks-bfea16e6d7d2) can be integrated into the presented architectures in order to account for the temporal structure of speech data (in combination of other techniques).
